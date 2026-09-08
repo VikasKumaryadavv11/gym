@@ -1,0 +1,1 @@
+export default function SectionTitle({eyebrow='IRON PEAK CLUB',title,copy,center=false}){return <div className={`section-title ${center?'center':''}`}><span className="eyebrow"><i/> {eyebrow}</span><h2>{title}</h2>{copy&&<p>{copy}</p>}</div>}

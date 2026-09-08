@@ -1,0 +1,1 @@
+'use client'; import { useInView } from 'framer-motion'; import { useRef } from 'react'; export const useScrollAnimation=()=>{const ref=useRef(null); return [ref,useInView(ref,{once:true,margin:'-80px'})]};

@@ -1,0 +1,2 @@
+'use client'; import Link from 'next/link'; import { motion,AnimatePresence } from 'framer-motion'; import { navLinks } from '@/lib/constants';
+export default function MobileMenu({open,onClose}){return <AnimatePresence>{open&&<motion.div className="mobile-menu" initial={{x:'100%'}} animate={{x:0}} exit={{x:'100%'}} transition={{type:'tween'}}>{navLinks.map(([label,href])=><Link onClick={onClose} href={href} key={href}>{label}</Link>)}<Link onClick={onClose} className="button primary" href="/membership">Join the club</Link></motion.div>}</AnimatePresence>}

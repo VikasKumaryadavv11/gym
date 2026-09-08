@@ -1,0 +1,1 @@
+import Button from '@/components/ui/Button'; export default function CTASection(){return <section className="cta"><div><span className="eyebrow"><i/> YOUR NEXT REP STARTS HERE</span><h2>MAKE THIS THE<br/><em>YEAR YOU MOVE.</em></h2></div><Button href="/contact">Book a club tour</Button></section>}
